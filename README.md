@@ -56,11 +56,28 @@ root/
     .gitignore
 ```
 
+# Software used in lab
+* Visual Studio 2017 Community [downloads](https://visualstudio.microsoft.com/downloads/).
+* We are using [NUnit](https://nunit.org/) test runner.
+* MSSQL Server 2017 express [download](https://www.microsoft.com/en-us/download/details.aspx?id=55994).
+* SQL Server Management Studio [download](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+* .NET CORE [download](https://www.microsoft.com/net/download).
+* .NET Framework 4.7.2 [download](https://www.microsoft.com/net/download/dotnet-framework-runtime).
+* Git [download](https://git-scm.com/download/win).
+* Git GUI Clients [pick any](https://git-scm.com/downloads/guis).
+* Teamcity [get](https://www.jetbrains.com/teamcity/).
+* Octopus [get](https://octopus.com/downloads).
+    * Octopus Tentacle
+    * TeamCity Plugin
+    * Command Line
+* Slack [download](https://slack.com/downloads/windows).
+
+**Please install these software using English language**
 
 # Ceremonies 
 You are responsible for these things:
 - Attending stand up meetings that held by Slack bot - Standup Alice (in English). Twice a week.
-- Commit and Push changes to his repository at least twice a week (please see [workflow](docs/workflow.md) page).
+- Commit and Push changes to your repository at least twice a week (please see [workflow](docs/workflow.md) page).
 
 # Communication
 - Our primary communication tool is Slack (epam-training.slack.com). 
@@ -101,8 +118,17 @@ You are responsible for these things:
 > :question: What mark is considered as positive for the task?
 - \>= 4
 
-> :question: Can I share my mark for the task with others students?
+> :question: Can I share my mark for the task with other students?
 - Yes.
+
+# Rreading
+
+1. http://www.albahari.com/nutshell/
+2. https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454
+3. https://www.apress.com/us/book/9781430265290
+4. https://www.amazon.com/Programming-WCF-Services-Maintainable-Service-Oriented/dp/1491944838/ref=dp_ob_image_bk
+5. https://www.amazon.com/Windows-Presentation-Foundation-Unleashed-WPF/dp/0672328917
+
 
 # Notes
 > :warning:  Please note that this document is subject to change.
