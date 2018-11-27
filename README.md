@@ -11,11 +11,11 @@ Please consider this lab as your first production project. Good luck! We are loo
 Here is [training plan](docs/training_plan.md)
 
 # Tasks
-- This course contains of 6 tasks.
-- You are responsible to complete all tasks. 
-- **Two failed tasks in a row means that student will be dismissed from the Lab.**
-    - If student failed 1st task and successfully completed 2nd then he can proceed learning.
-    - Two failed tasks (not in a row) from 6 means that student will not be accepted to the final interview until he completes them.
+- This course contains 6 tasks.
+- You are obliged to complete all tasks. 
+- **Two failed tasks in a row mean that student will be dismissed from the Lab.**
+    - If student has failed 1st task and successfully completed 2nd then he can proceed with learning.
+    - Two failed tasks (not in a row) from 6 mean that student will not be allowed to the final interview until he completes them.
 
 Please read [how to send task for review](docs/workflow.md)
 
@@ -30,7 +30,7 @@ The goal of this section is to provide a consistent set of naming conventions th
 - Do not write comments in any language but English.
 
 ## Repository structure
-The repository structure is very essential to the project. Please think about your folders and files names carefully. Don't name your folders like `111` or `test`, `delete312` etc.
+The repository structure is essential for the project. Please think about your folder and file names carefully. Don't name your folders like `111` or `test`, `delete312` etc.
 Please add [gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore) to your repository (if it doesn't exists already).
 
 ### Repository structure example
@@ -74,26 +74,26 @@ root/
 
 **Please install these software using English language**
 
-# Ceremonies 
-You are responsible for these things:
+# Protocol
+You are responsible for the following:
 - Attending stand up meetings that held by Slack bot - Standup Alice (in English). Twice a week.
 - Commit and Push changes to your repository at least twice a week (please see [workflow](docs/workflow.md) page).
 
 # Communication
 - Our primary communication tool is Slack (epam-training.slack.com). 
-- We are using English language to chat in GitHub and for stand up in Slack.
+- We are using English language to chat in GitHub and for stand ups in Slack.
 - We are using Russian language at lectures and in other Slack channels.
 
 # FAQ
 > :question: I can't attend the lecture today, what can I do?
-- Don't worry, just read the topics of the lecture by your self.
+- Don't worry, just read the topics of the lecture by yourself.
 - Please send message about your absence into the slack channel.
 
-> :question: Can I watch lecture online?
-- No. We are not doing broadcasting.
+> :question: Can I watch a lecture online?
+- No. We are not broadcasting.
 
 > :question: Can I get a copy of presentation?
-- No. We are not distribute any training materials.
+- No. We are not distributing any training materials.
 
 > :question: Can I record lectures?
 - You may not record lectures with any recording devices (phone, microphone, camera).
@@ -103,10 +103,10 @@ You are responsible for these things:
 - The attendance is not mandatory however your final score depends on it. :smiley:
 
 > :question: If I failed in this lab can I participate on it next time?
-- Yes you can, however the number of students is limited and those students that applied to the lab at first time has priority.
+- Yes you can, however the number of students is limited and students who apply to the lab for the first time have priority.
 
 > :question: I can't complete my task in time due to serious obstacles.
-- The deadline can be moved but your maximum mark for the task will be lower then original value.
+- The deadline can be moved but your maximum mark for the task will be lowered.
 - Please contact lab host to adjust deadline. 
 
 > :question: What mark is highest for the task?
@@ -118,10 +118,10 @@ You are responsible for these things:
 > :question: What mark is considered as positive for the task?
 - \>= 4
 
-> :question: Can I share my mark for the task with other students?
+> :question: Can I share my marks with other students?
 - Yes.
 
-# Rreading
+# Reading
 
 1. http://www.albahari.com/nutshell/
 2. https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454
