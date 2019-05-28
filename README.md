@@ -46,12 +46,12 @@ root/
                 /...
                 /projectB.csproj
        /...
-       /tests
-             /projectATests
-             /projectBTests
-             /...
-       mySolutionName.sln 
+    tests
+       /projectATests
+       /projectBTests
+       /... 
     docs/
+    mySolutionName.sln 
     readme.md
     .gitignore
 ```
