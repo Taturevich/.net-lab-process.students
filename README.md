@@ -57,7 +57,7 @@ root/
 ```
 
 # Software used in lab
-* Visual Studio 2017 Community [downloads](https://visualstudio.microsoft.com/downloads/).
+* Visual Studio 2019 Community [downloads](https://visualstudio.microsoft.com/downloads/).
 * We are using [NUnit](https://nunit.org/) test runner.
 * MSSQL Server 2017 express [download](https://www.microsoft.com/en-us/download/details.aspx?id=55994).
 * SQL Server Management Studio [download](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
