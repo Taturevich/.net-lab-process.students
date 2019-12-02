@@ -20,7 +20,7 @@
 * ORM
 * MVC Models & Validation
 * Multithreading basics; 
-* Aync programming basics;
+* Async programming basics;
 
 ## III. Automation testing
 * Test cases & Test plan; Test strategy
