@@ -3,10 +3,10 @@
 ## I. Essential
 * .NET Framework OOP
 * SQL basics
-* Types and Unit testing DI; 
-    * Task 1
 * Assemblies; git
+* Types and Unit testing DI; 
 * Encodings & Strings; Collections & Generics
+    * Task 1
 * GC
 * Delegates & Events, Lambda functions
 * XML; 
