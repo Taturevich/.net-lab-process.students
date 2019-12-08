@@ -1,0 +1,5 @@
+F:\.net-lab-process.students\solution_template\test\SolutionTemplateTests\bin\Debug\SolutionTemplateTests.dll
+F:\.net-lab-process.students\solution_template\test\SolutionTemplateTests\bin\Debug\SolutionTemplateTests.pdb
+F:\.net-lab-process.students\solution_template\test\SolutionTemplateTests\obj\Debug\SolutionTemplateTests.dll
+F:\.net-lab-process.students\solution_template\test\SolutionTemplateTests\obj\Debug\SolutionTemplateTests.pdb
+F:\.net-lab-process.students\solution_template\test\SolutionTemplateTests\obj\Debug\SolutionTemplateTests.csprojAssemblyReference.cache

@@ -1,0 +1,5 @@
+F:\.net-lab-process.students\solution_template\src\SolutionTemplate\bin\Debug\SolutionTemplate.dll
+F:\.net-lab-process.students\solution_template\src\SolutionTemplate\bin\Debug\SolutionTemplate.pdb
+F:\.net-lab-process.students\solution_template\src\SolutionTemplate\obj\Debug\SolutionTemplate.dll
+F:\.net-lab-process.students\solution_template\src\SolutionTemplate\obj\Debug\SolutionTemplate.pdb
+F:\.net-lab-process.students\solution_template\src\SolutionTemplate\obj\Debug\SolutionTemplate.csprojAssemblyReference.cache
