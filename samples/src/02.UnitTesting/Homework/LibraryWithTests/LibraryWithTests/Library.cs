@@ -25,7 +25,7 @@ namespace LibraryWithTests
         {
             var canRentBook = _userBooks
                 .GetAll()
-                .Where(x => x.UserId == user.Id).Count() < 2;
+                .Count(x => x.UserId == user.Id) < 2;
             if (!canRentBook)
             {
                 throw new InvalidOperationException();
