@@ -1,6 +1,8 @@
 ﻿using FluentAssertions;
+using LibraryWithTests;
 using LibraryWithTests.Domain;
 using LibraryWithTests.Services;
+using LibraryWithTests.Tests.Integration;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace LibraryWithTests.Tests.Integration
+namespace IntegrationTests
 {
     [TestFixture]
     public class BookFileStoreTests
@@ -25,7 +27,7 @@ namespace LibraryWithTests.Tests.Integration
         public void RevertStorage()
         {
             string result;
-            using (Stream stream = Assembly.GetAssembly(typeof(BookFileStoreTests)).GetManifestResourceStream("LibraryWithTests.Books_for_test.txt"))
+            using (Stream stream = Assembly.GetAssembly(typeof(ILibrary)).GetManifestResourceStream("LibraryWithTests.Books_for_test.txt"))
             using (StreamReader reader = new StreamReader(stream))
             {
                 result = reader.ReadToEnd();

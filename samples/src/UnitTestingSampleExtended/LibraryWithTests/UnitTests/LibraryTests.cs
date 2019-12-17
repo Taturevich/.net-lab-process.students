@@ -84,7 +84,7 @@ namespace LibraryWithTests.Tests.Unit
 
 
         [Test]
-        public void GivenRent_WhenRentBook_NewUserBookAdded()
+        public void RentBook_WhenRentBook_NewUserBookAdded()
         {
             // Arrange
             var userBookToAdd = new UserBook { BookId = 7, UserId = 7 };
@@ -102,7 +102,8 @@ namespace LibraryWithTests.Tests.Unit
             library.RentBook(new User { Id = 7}, new Book { Id = 7 } );
 
             // Assert
-            userBooks.Should().ContainSingle(ub => ub.UserId == 7 && ub.BookId == 7 && ub.RentDateStart >= DateTime.Now.AddSeconds(-1));
+            userBooks.Should()
+                .ContainSingle(ub => ub.UserId == 7 && ub.BookId == 7 && ub.RentDateStart >= DateTime.Now.AddSeconds(-1));
         }
 
         [Test]
