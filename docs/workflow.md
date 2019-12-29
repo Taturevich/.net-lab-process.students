@@ -37,8 +37,10 @@ develop |
 * Go to [training portal](https://www.training.by/) and send your task for review.
 > Just paste a link to your pull request into description for the task.
 * Fix ongoing issues that your reviewer opened by commiting fixes to `develop` branch;
+* Do not merge pull request to master by yourself. It should be done only by reviewer.
 
 # Issue workflow
 * All issues should be resolved before PR to `master` opened;
-* Don't close issues. This will be done by reviwer after he will ensure that issue was resolved; 
+* Don't close issues. This will be done by reviwer after he will ensure that issue was resolved;
+* Reviewer may add some remarks on your pull request. You should address all of them either by resolving them (in case you fix them) or commenting for getting additional information or answer to a question. All discussions should be resolved before merge to the master happens.
 
