@@ -55,6 +55,7 @@ root/
     readme.md
     .gitignore
 ```
+If should use solution template as a starting point in your softwared design process. You may find it ![here](https://github.com/Taturevich/.net-lab-process.students/tree/master/solution_template)
 
 # Software used in lab
 * Visual Studio 2019 Community [downloads](https://visualstudio.microsoft.com/downloads/).
