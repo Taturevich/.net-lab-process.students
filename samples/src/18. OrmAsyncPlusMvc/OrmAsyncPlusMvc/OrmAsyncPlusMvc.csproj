@@ -179,8 +179,8 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data" />
-    <Folder Include="Models" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -197,7 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EF-Task\EF-Task.csproj">
-      <Project>{d6ea1bc0-6afe-4f2d-ab8c-034379a2a988}</Project>
+      <Project>{D6EA1BC0-6AFE-4F2D-AB8C-034379A2A988}</Project>
       <Name>EF-Task</Name>
     </ProjectReference>
   </ItemGroup>
@@ -221,7 +221,8 @@
           <IISUrl>http://localhost:5000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl />
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

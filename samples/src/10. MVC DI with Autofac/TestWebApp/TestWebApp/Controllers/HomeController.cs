@@ -17,9 +17,10 @@ namespace TestWebApp.Controllers
             this.serivce = serivce;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return this.Content("Hello world");
+            return new EmptyResult();
+            ////return this.Content(this.serivce.GetEventById(id));
         }
 
         public ActionResult Event(int id)

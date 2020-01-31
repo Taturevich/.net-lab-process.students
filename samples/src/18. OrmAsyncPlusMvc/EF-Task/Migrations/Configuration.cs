@@ -7,7 +7,8 @@ namespace EF_Task.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            ContextKey = nameof(NorthwindContext);
         }
 
         protected override void Seed(NorthwindContext context)

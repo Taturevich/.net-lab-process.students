@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using EF_Task;
 
@@ -22,13 +23,25 @@ namespace AsyncVsSyncExample.Controllers
         public ActionResult Index()
         {
             var productInfo = _productCategoryService.GetProductInfoForCategory(3);
-            return View(productInfo);
+            return Json(productInfo, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Sleep()
+        {
+            Thread.Sleep(500);
+            return new EmptyResult();
+        }
+
+        public async Task<ActionResult> SleepAsync()
+        {
+            await Task.Delay(500);
+            return new EmptyResult();
         }
 
         public async Task<ActionResult> Async()
         {
             var productInfo = await _productCategoryService.GetProductInfoForCategoryAsync(3);
-            return View(productInfo);
+            return Json(productInfo, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult About()

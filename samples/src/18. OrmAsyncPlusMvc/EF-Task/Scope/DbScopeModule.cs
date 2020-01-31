@@ -18,6 +18,10 @@ namespace EF_Task.Scope
             builder.RegisterType<ProductCategoryService>().As<IProductCategoryService>();
             builder.RegisterGeneric(typeof(NorthwindEntityStorage<>)).As(typeof(IEntityStorage<>));
             builder.RegisterGeneric(typeof(DbScopeCollection<>)).AsImplementedInterfaces().SingleInstance();
+            using (var context = new NorthwindContext())
+            {
+                ////context.Database.Initialize(false);
+            }
         }
     }
 }

@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using EF_Task.Entities;
+using EF_Task.Migrations;
 
 namespace EF_Task
 {
     public class NorthwindContext : DbContext
     {
-        public NorthwindContext() : base("Northwind")
+        public NorthwindContext()
+            : base("Northwind")
         {
             Identity = Guid.NewGuid();
         }
@@ -36,5 +39,11 @@ namespace EF_Task
         public DbSet<Supplier> Suppliers { get; set; }
 
         public DbSet<Territory> Territories { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
