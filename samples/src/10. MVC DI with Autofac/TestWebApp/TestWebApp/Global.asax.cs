@@ -1,5 +1,5 @@
-﻿// <copyright file="Global.asax.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
+﻿// <copyright file="Global.asax.cs" company="EPAM Systems">
+// Copyright (c) EPAM Systems. All rights reserved.
 // </copyright>
 
 namespace TestWebApp

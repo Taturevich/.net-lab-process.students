@@ -93,7 +93,7 @@ namespace IntegrationTests
 
 
         [Test]
-        public void GivenDelete_WhenDeleteExistBook_ShouldReturnBookListWithoutDeletedBook()
+        public void Delete_WhenDeleteExistBook_ShouldReturnBookListWithoutDeletedBook()
         {
             // Arrange
             Book bookToDelete = new Book { Id = 4, Name = "The Hobbit" };
@@ -101,11 +101,19 @@ namespace IntegrationTests
             var bookFileStorage = new BookFileStorage(_settings);
 
             // Act
+            var booksBeforeDelete = bookFileStorage.GetAll();
             bookFileStorage.Delete(bookToDelete);
-            var books = bookFileStorage.GetAll();
+            var booksAfterDelete = bookFileStorage.GetAll();
 
             // Assert
-            books.Should().BeEquivalentTo(new List<Book>
+            booksBeforeDelete.Should().BeEquivalentTo(new List<Book>
+            {
+                new Book { Id = 1, Name = "The Lord of the Rings" },
+                new Book { Id = 2, Name = "Le Petit Prince" },
+                new Book { Id = 3, Name = "Harry Potter and the Philosopher's Stone" },
+                new Book { Id = 4, Name = "The Hobbit" }
+            });
+            booksAfterDelete.Should().BeEquivalentTo(new List<Book>
             {
                 new Book { Id = 1, Name = "The Lord of the Rings" },
                 new Book { Id = 2, Name = "Le Petit Prince" },

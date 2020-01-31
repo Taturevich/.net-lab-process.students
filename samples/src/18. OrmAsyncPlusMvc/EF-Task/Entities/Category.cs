@@ -7,6 +7,7 @@ namespace EF_Task.Entities
     public class Category
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int CategoryID { get; set; }
 
         [Required]

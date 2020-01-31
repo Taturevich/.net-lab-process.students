@@ -22,6 +22,7 @@ namespace EF_Task.Repository
         public IQueryable<TEntity> GetAll()
         {
             var context = _contextLocator.GetCurrentDbContext();
+            
             return context.Set<TEntity>().AsNoTracking();
         }
     }
