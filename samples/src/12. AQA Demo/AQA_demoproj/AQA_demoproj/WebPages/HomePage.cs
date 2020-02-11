@@ -5,21 +5,24 @@ namespace AQA_demoproj.WebPages
 {
     public class HomePage : AbstractPage
     {
+        private const int DefaultWaitingInterval = 7;
+
         public HomePage(IWebDriver driver) : base(driver){}
         
-        public IWebElement SignInButton => FindByClassName("header-auth__signin-icon");
-        public IWebElement EmailInput => FindByCss("input[id='signInEmail']");
-        public IWebElement PasswordInput => FindByCss("input[id='signInPassword']");
-        public IWebElement SubmitLoginFormButton => FindByCss("input[type='submit']");
-        public IWebElement LoginFormError(string textPresent) => FindByCssWithText("div.popup__error-message.ng-binding", textPresent);
-        public IWebElement SelectLanguageButton => FindByClassName("location-selector__globe");
-        public string BannerTitle => FindByClassName("hero-banner__heading").Text;
+        public IWebElement SignInButton => FindByClassName("header-auth__signin-icon", DefaultWaitingInterval);
+        public IWebElement EmailInput => FindByXPath("//*[@id=\"signInEmail\"]", DefaultWaitingInterval);
+        public IWebElement PasswordInput => FindByXPath("//*[@id=\"signInPassword\"]", DefaultWaitingInterval);
+        public IWebElement SubmitLoginFormButton => FindByCss("input[type='submit']", DefaultWaitingInterval);
+        public IWebElement LoginFormError(string textPresent) => FindByCssWithText("div.popup__error-message.ng-binding", textPresent, DefaultWaitingInterval);
+        public IWebElement SelectLanguageButton => FindByClassName("location-selector__globe", DefaultWaitingInterval);
+        public string BannerTitle => FindByClassName("hero-banner__heading", DefaultWaitingInterval).Text;
 
 
         public void Open()
         {
+            
             Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
-            Driver.Url = "http://www.training.by";
+            Driver.Url = "http://www.training.by/?lang=en";
         }
 
         public void SelectLanguageFromDropDown(string language)

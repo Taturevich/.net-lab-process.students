@@ -21,8 +21,10 @@ namespace AQA_demoproj.Steps
         [Then(@"Banner text is ""(.*)""")]
         public void ThenBannerTextIs(string bannerText)
         {
-            var actualText = HomePage.BannerTitle.Replace("\r\n", " ");
-            Assert.That(actualText.Contains(bannerText));
+            var title = HomePage.BannerTitle;
+            var actualText = title.Replace("\r\n", " ");
+            var result = actualText.Contains(bannerText);
+            Assert.That(actualText.Contains(bannerText), Is.True);
         }
     }
 }

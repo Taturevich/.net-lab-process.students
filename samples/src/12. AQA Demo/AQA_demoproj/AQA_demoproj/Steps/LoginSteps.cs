@@ -1,4 +1,5 @@
-﻿using AQA_demoproj.WebPages;
+﻿using System.Threading.Tasks;
+using AQA_demoproj.WebPages;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -16,8 +17,9 @@ namespace AQA_demoproj.Steps
         }
 
         [When(@"(?:User )?[Cc]licks Login button")]
-        public void WhenUserClicksLoginButton()
+        public async Task WhenUserClicksLoginButtonAsync()
         {
+            await Task.Delay(3000);
             HomePage.SignInButton.Click();
         }
 
