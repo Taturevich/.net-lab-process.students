@@ -1,14 +1,13 @@
-using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using EF_Task.Entities;
-using EF_Task.Models;
-using EF_Task.Repository;
-using EF_Task.Scope;
+using EF_Task_Standard.Entities;
+using EF_Task_Standard.Models;
+using EF_Task_Standard.Repository;
+using EF_Task_Standard.Scope;
+using Microsoft.EntityFrameworkCore;
 
-namespace EF_Task
+namespace EF_Task_Standard
 {
     public interface IProductCategoryService
     {

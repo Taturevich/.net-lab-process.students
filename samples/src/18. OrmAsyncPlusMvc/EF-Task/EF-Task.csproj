@@ -85,14 +85,12 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ProductCategoryInfo.cs" />
-    <Compile Include="NorthwindContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Scope\AsyncLocalStore.cs" />
     <Compile Include="Scope\DbScopeCollection.cs" />
     <Compile Include="Scope\DbScopeModule.cs" />
     <Compile Include="Scope\ScopeResolver.cs" />
-    <Compile Include="Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

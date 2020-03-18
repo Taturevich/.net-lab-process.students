@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
-using EF_Task;
-using EF_Task.Entities;
-using EF_Task.Repository;
-using EF_Task.Scope;
+using EF_Task_Standard;
+using EF_Task_Standard.Scope;
 using NUnit.Framework;
 
 namespace EntityFrameworkUnitTests

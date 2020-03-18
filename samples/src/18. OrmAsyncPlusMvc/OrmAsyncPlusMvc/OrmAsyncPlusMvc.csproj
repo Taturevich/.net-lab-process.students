@@ -199,6 +199,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EF-Task-Standard\EF-Task-Standard.csproj">
+      <Project>{aaa5a982-59ea-47fd-af5d-8c7673d658af}</Project>
+      <Name>EF-Task-Standard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EF-Task\EF-Task.csproj">
       <Project>{D6EA1BC0-6AFE-4F2D-AB8C-034379A2A988}</Project>
       <Name>EF-Task</Name>

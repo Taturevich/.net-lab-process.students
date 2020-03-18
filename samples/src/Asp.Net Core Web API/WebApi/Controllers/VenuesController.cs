@@ -39,7 +39,10 @@ namespace WebApi.Controllers
         {
             var result = await _venueService.Create(model);
 
-            return CreatedAtAction(nameof(GetById), new { id = result.Result }, result.Result);
+            return CreatedAtAction(nameof(GetById), new
+            {
+                id = result.Result
+            }, result.Result);
         }
 
         [HttpPut("{id}")]
