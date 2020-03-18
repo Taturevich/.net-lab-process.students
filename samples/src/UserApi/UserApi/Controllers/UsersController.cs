@@ -41,6 +41,14 @@ namespace UserApi.Controllers
             return BadRequest(result.Errors);
         }
 
+        /// <summary>
+        /// Login into the new API.
+        /// </summary>
+        /// <remarks>
+        /// Here is the code sample of usage
+        /// </remarks>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm]RegisterModel model)
         {

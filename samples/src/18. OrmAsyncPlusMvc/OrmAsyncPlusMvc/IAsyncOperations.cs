@@ -9,7 +9,7 @@ namespace AsyncVsSyncExample
 {
     public interface IAsyncOperations
     {
-        public Task<List<T>> ToListAsync<T>(IQueryable<T> query);
+         Task<List<T>> ToListAsync<T>(IQueryable<T> query);
     }
 
     public class AsyncOperations : IAsyncOperations
