@@ -4,7 +4,7 @@ Or use exe provided in this folder.
 2) open command line in directory with openssl.exe and execute command:
 set RANDFILE=.rnd
 
-3) Creating private-oublic pair and fill certificate information. Provide meaningful information for each property. In the command line: 
+3) Creating private-public pair and fill certificate information. Provide meaningful information for each property. In the command line: 
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.pem -out public.pem -config "openssl.cnf"  
 
 4) Exporting certificate as p12. Provide reasonable password and remember it. In command line:
