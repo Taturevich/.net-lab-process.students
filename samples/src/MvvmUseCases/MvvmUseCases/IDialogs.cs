@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 
 namespace MvvmUseCases
 {
@@ -48,7 +49,9 @@ namespace MvvmUseCases
             var viewTypeName = pureTypeName + "View";
             var viewNamespace = "MvvmUseCases.Views.";
             var viewType = Type.GetType(viewNamespace + viewTypeName);
-            return Activator.CreateInstance(viewType ?? throw new InvalidOperationException()) as Window;
+            var component = Activator.CreateInstance(viewType ?? throw new InvalidOperationException()) as IComponentConnector;
+            component?.InitializeComponent();
+            return component as Window;
         }
     }
 }

@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="ChildWindowView" Height="450" Width="800">
     <Grid>
-        
+        <TextBox Text="Welcome to the chocolate factory!"/>
     </Grid>
 </Window>
