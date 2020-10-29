@@ -5,15 +5,17 @@ namespace AQA_demoproj.WebPages
 {
     public class HomePage : AbstractPage
     {
-        private const int DefaultWaitingInterval = 7;
+        private const int DefaultWaitingInterval = 1;
 
         public HomePage(IWebDriver driver) : base(driver){}
         
         public IWebElement SignInButton => FindByClassName("header-auth__signin-icon", DefaultWaitingInterval);
-        public IWebElement EmailInput => FindByXPath("//*[@id=\"signInEmail\"]", DefaultWaitingInterval);
-        public IWebElement PasswordInput => FindByXPath("//*[@id=\"signInPassword\"]", DefaultWaitingInterval);
+        public IWebElement FinalLoginButton => FindByCss("input[id='kc-login']", DefaultWaitingInterval);
+        public IWebElement EmailInput => FindByCss("input[id='username']", DefaultWaitingInterval);
+        public IWebElement PasswordInput => FindByCss("input[id='password']", DefaultWaitingInterval);
+        public IWebElement ContinueLoginFormButton => FindByCss("button[id='kc-login-next']", DefaultWaitingInterval);
         public IWebElement SubmitLoginFormButton => FindByCss("input[type='submit']", DefaultWaitingInterval);
-        public IWebElement LoginFormError(string textPresent) => FindByCssWithText("div.popup__error-message.ng-binding", textPresent, DefaultWaitingInterval);
+        public IWebElement LoginFormError(string textPresent) => FindByCssWithText("div.alert-summary", textPresent, DefaultWaitingInterval);
         public IWebElement SelectLanguageButton => FindByClassName("location-selector__globe", DefaultWaitingInterval);
         public string BannerTitle => FindByClassName("hero-banner__heading", DefaultWaitingInterval).Text;
 

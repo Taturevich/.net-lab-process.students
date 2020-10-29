@@ -23,10 +23,22 @@ namespace AQA_demoproj.Steps
             HomePage.SignInButton.Click();
         }
 
+        [When(@"(?:User )?[Cc]licks FinalLogin button")]
+        public void WhenUserClicksFinalLoginButton()
+        {
+            HomePage.FinalLoginButton.Click();
+        }
+
         [When(@"Enters ""(.*)"" to user name input")]
         public void WhenEntersToUserNameInput(string inputString)
         {
             HomePage.EmailInput.SendKeys(inputString);
+        }
+
+        [When(@"(?:User )?[Cc]licks Continue button")]
+        public void WhenUserClicksContinueButton()
+        {
+            HomePage.ContinueLoginFormButton.Click();
         }
 
         [When(@"Enters ""(.*)"" to password field")]

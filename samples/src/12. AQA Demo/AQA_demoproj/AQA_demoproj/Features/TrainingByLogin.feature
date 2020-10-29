@@ -5,10 +5,10 @@
 
 Scenario: Login to training.by is failed with wrong credentials
 	Given User is on training.by
-	When User sets site language to "English"
-	And User clicks Login button
+	When User clicks Login button
 	And Enters "pollux094@gmail.com" to user name input
-	And Enters "asda" to password field
-	And Clicks Sign In button on login form
-	Then Login form has error "Login failed. Please try again."
+	And User clicks Continue button
+	And Enters "asdsafasf" to password field
+	And User clicks FinalLogin button
+	Then Login form has error "Invalid email or password."
 
